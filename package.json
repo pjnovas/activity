@@ -1,0 +1,48 @@
+{
+  "name": "activity",
+  "version": "0.1.0",
+  "description": "Activity Manager for any kind of statuses based on ids",
+  "author": "Pablo Novas <pjnovas@gmail.com>",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=0.8.x"
+  },
+  "dependencies": {
+    "underscore": "1.4.x"
+  },
+  "devDependencies": {
+    "mocha": "1.8.x",
+    "expect.js": "0.2.x",
+    
+    "blanket": "1.1.4",
+    "grunt": "0.4.x",
+    "grunt-cli": "~0.1.6",
+    "grunt-mocha-cov": "0.0.7",
+    "mocha-term-cov-reporter": "0.1.x"
+  },
+  "scripts": {
+    "blanket": {
+      "pattern": "/activity/lib/"
+    },
+    "test": "./node_modules/.bin/grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pjnovas/activity.git"
+  },
+  "bugs": {
+    "url": "git://github.com/pjnovas/activity/issues"
+  },
+  "keywords": [
+    "status",
+    "manager",
+    "activity"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "e9e39e8abc2a9ac33ad1aea2f9247ea5a213645c"
+}
