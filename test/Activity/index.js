@@ -51,6 +51,11 @@ describe('Activity', function(){
     });
   });
 
+  it('should allow to set an status without a callback', function(){
+    var activity = createActivity();
+    activity.setStatus('uid1', 'online');
+  });
+
   it('should throw an error if status is invalid', function(done){
     var activity = createActivity();
 
