@@ -22,7 +22,7 @@ var activity = new Activity({
 ```javascript
 activity.setStatus('uid1', 'online', function(err){
   if (err) {
-    // somthing went wrong
+    // something went wrong
   }
 });
 
@@ -35,7 +35,7 @@ activity.setStatus('uid3', 'online');
 ```javascript
 activity.getStatus(['uid1', 'uid2'], function(err, statuses){
   if (err) {
-    // somthing went wrong
+    // something went wrong
   }
   else {
     console.dir(statuses); // { uid1: 'online', uid2: 'away' }
@@ -47,7 +47,7 @@ activity.getStatus(['uid1', 'uid2'], function(err, statuses){
 ```javascript
 activity.getStatus('uid1', function(err, status){
   if (err) {
-    // somthing went wrong
+    // something went wrong
   }
   else {
     console.dir(status); // 'online'
@@ -59,7 +59,7 @@ activity.getStatus('uid1', function(err, status){
 ```javascript
 activity.getIds('online', function(err, ids){
   if (err) {
-    // somthing went wrong
+    // something went wrong
   }
   else {
     console.dir(ids); // [ 'uid1', 'uid3' ]
