@@ -74,8 +74,9 @@ activity.getIds('online', function(err, ids){
 ### Contribute
 
 1. Fork this repo
+2. run `npm install`
 2. Create the tests for the new functionality or bug case
 3. Put your awesome code
-4. run `npm test`
+4. run `grunt test`
 5. All good?, place a pull request
 

@@ -112,6 +112,19 @@ describe('Activity', function(){
     });
   });
 
+  it('should allow to get ids by status', function(done){
+    createTestStatusesActivity(function(activity){
+      activity.getIds('online', function(err, ids){
+        expect(err).to.not.be.ok();
+
+        expect(ids).to.be.an('array');
+        expect(ids.length).to.be.equal(1);
+        expect(ids[0]).to.be.equal('uid1');
+        done();
+      });
+    });
+  });
+
   it('should allow to be destroyed', function(done){
     createTestStatusesActivity(function(activity){
       activity.destroy(function(err){
