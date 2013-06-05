@@ -1,6 +1,6 @@
 {
   "name": "activity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Activity Manager for any kind of statuses based on ids",
   "author": "Pablo Novas <pjnovas@gmail.com>",
   "main": "index.js",
